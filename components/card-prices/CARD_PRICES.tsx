@@ -1,4 +1,4 @@
-export const CARDS_DATA = [
+export const CARD_PRICES = [
   {
     key: "1",
     title: "Plan Básico",

@@ -1,4 +1,4 @@
-import { CARDS_DATA } from "./CARD_DATA";
+import { CARD_PRICES } from "./CARD_PRICES";
 import CustomCard from "./CustomCard";
 
 export default function Prices() {
@@ -18,7 +18,7 @@ export default function Prices() {
           Planes Comerciales
         </h2>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {CARDS_DATA.map((card) => (
+          {CARD_PRICES.map((card) => (
             <CustomCard card={card} key={card.key} />
           ))}
         </div>
