@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { Button } from "../ui/button";
+import { whatsappURL } from "@/lib/whatsApp";
 
 export default function ButtonFloating() {
   return (
     <Link
-      href={`${process.env.NEXT_PUBLIC_PHONE_NUMBER}`}
+      href={whatsappURL}
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-4 right-4 z-50"

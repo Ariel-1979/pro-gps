@@ -25,7 +25,7 @@ export default function Hero() {
             tecnología de última generación.
           </p>
           <div className="space-x-4">
-            <Link href="#contact">
+            <Link href="#contacto">
               <Button className="bg-[--dark-principal] hover:bg-yellow-600 text-black font-bold">
                 Quiero recibir más información
               </Button>

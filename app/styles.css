@@ -5,3 +5,19 @@
   --light-principal: #000000;
   --light-secundario: #fffd70;
 }
+
+.bg-contacto,
+.bg-servicios {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+}
+
+.bg-contacto {
+  background-image: url("/contacto.jpg");
+}
+
+.bg-servicios {
+  background-image: url("/servicios.webp");
+}

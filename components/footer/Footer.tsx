@@ -7,7 +7,7 @@ export default function Footer() {
       id="footer"
       className="w-full border-t bg-white/80 backdrop-blur-sm dark:bg-gray-900/80"
     >
-      <div className="container mx-auto flex flex-col gap-4 py-6 px-4 md:px-6">
+      <div className="container mx-auto flex flex-col gap-4 py-2 px-4 md:px-6">
         <div className="flex flex-col gap-4 sm:flex-row items-center justify-between">
           <Logo />
           <nav className="flex gap-4 sm:gap-6">

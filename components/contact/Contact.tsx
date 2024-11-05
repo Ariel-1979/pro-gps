@@ -1,18 +1,12 @@
 import Link from "next/link";
 import { Button } from "../ui/button";
+import { whatsappURL } from "@/lib/whatsApp";
 
 export default function Contact() {
   return (
     <section
       id="contacto"
-      className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-800"
-      style={{
-        backgroundImage: `url(/contacto.jpg)`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundBlendMode: "overlay",
-      }}
+      className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-800 bg-contacto"
     >
       <div className="container px-4 md:px-6 py-12 md:py-24 lg:py-32">
         <div
@@ -28,11 +22,7 @@ export default function Contact() {
             </p>
           </div>
           <div className="w-full max-w-sm space-y-2">
-            <Link
-              href={`${process.env.NEXT_PUBLIC_PHONE_NUMBER}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link href={whatsappURL} target="_blank" rel="noopener noreferrer">
               <Button className="w-full bg-green-500 hover:bg-green-600">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
