@@ -18,7 +18,7 @@ export default function Hero() {
       <div className="relative z-10 container px-4 md:px-6 text-center">
         <div className="space-y-4 bg-black bg-opacity-30 p-6 rounded-lg backdrop-blur-sm">
           <h1 className="text-3xl font-bold tracking-tighter text-[--dark-principal] sm:text-4xl md:text-5xl lg:text-6xl/none text-center shadow-text">
-            Logística y Recupero Satelital
+            Logística y Recupero Vehicular
           </h1>
           <p className="mx-auto max-w-[700px] text-gray-100 md:text-xl shadow-text">
             Soluciones profesionales de rastreo GPS para tu flota vehicular con
