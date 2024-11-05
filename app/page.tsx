@@ -6,7 +6,6 @@ import {
   Footer,
   Hero,
   NavBar,
-  Prices,
 } from "@/components/index";
 
 export default async function LandingPage() {
@@ -16,7 +15,6 @@ export default async function LandingPage() {
       <main className="flex-1 pt-16 ">
         <Hero />
         <CardGroup />
-        <Prices />
         <Contact />
       </main>
       <ButtonWhatsappFloating />

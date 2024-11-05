@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 export default function ButtonFloating() {
   return (
     <Link
-      href="https://wa.me/1234567890"
+      href={`${process.env.NEXT_PUBLIC_PHONE_NUMBER}`}
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-4 right-4 z-50"

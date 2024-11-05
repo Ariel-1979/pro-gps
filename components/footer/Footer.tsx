@@ -1,5 +1,5 @@
-import { MapPin } from "lucide-react";
 import Link from "next/link";
+import Logo from "../ui/Logo";
 
 export default function Footer() {
   return (
@@ -9,10 +9,7 @@ export default function Footer() {
     >
       <div className="container mx-auto flex flex-col gap-4 py-6 px-4 md:px-6">
         <div className="flex flex-col gap-4 sm:flex-row items-center justify-between">
-          <div className="flex items-center gap-2 text-black dark:text-white">
-            <MapPin className="h-6 w-6 " />
-            <span className="font-bold text-[--dark-principal]">PRO GPS</span>
-          </div>
+          <Logo />
           <nav className="flex gap-4 sm:gap-6">
             <Link
               className="text-sm hover:text-[--dark-principal] transition-colors"
@@ -67,7 +64,7 @@ export default function Footer() {
           </nav>
         </div>
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-500">
-          <p>© 2024 PRO GPS. Todos los derechos reservados.</p>
+          <p>© 2024 ProGPS. Todos los derechos reservados.</p>
           <nav className="flex gap-4">
             <Link className="hover:underline underline-offset-4" href="#">
               Términos de Servicio

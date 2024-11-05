@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 export default function Contact() {
   return (
     <section
-      id="contact"
+      id="contacto"
       className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-800"
       style={{
         backgroundImage: `url(/contacto.jpg)`,
@@ -29,7 +29,7 @@ export default function Contact() {
           </div>
           <div className="w-full max-w-sm space-y-2">
             <Link
-              href="https://wa.me/1234567890"
+              href={`${process.env.NEXT_PUBLIC_PHONE_NUMBER}`}
               target="_blank"
               rel="noopener noreferrer"
             >

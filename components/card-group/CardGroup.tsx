@@ -4,7 +4,7 @@ import CustomCard from "./CustomCard";
 export default function CardGroup() {
   return (
     <section
-      id="features"
+      id="servicios"
       className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-700 dark:text-[--dark-principal]"
       style={{
         backgroundImage: `url(/maps.webp)`,
