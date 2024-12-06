@@ -1,9 +1,9 @@
 :root {
-  --dark-principal: #fffd70;
+  --dark-principal: #ffcc00;
   --dark-secundario: #ffffff;
 
   --light-principal: #000000;
-  --light-secundario: #fffd70;
+  --light-secundario: #ffcc00;
 }
 
 .bg-contacto,
