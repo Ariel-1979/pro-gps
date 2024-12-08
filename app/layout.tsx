@@ -5,8 +5,8 @@ import { ThemeProvider } from "next-themes";
 import { NavBar } from "@/components/index";
 
 export const metadata: Metadata = {
-  title: "ProGPS - Rastreo Satelital",
-  description: "PRO GPS - Rastreo Satelital",
+  title: "Rastreo Satelital",
+  description: "Rastreo Satelital",
 };
 
 export default function RootLayout({
