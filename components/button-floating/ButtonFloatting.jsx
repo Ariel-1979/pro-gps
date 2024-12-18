@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Button } from "../ui/button";
-import { whatsappURL } from "@/lib/whatsApp";
+import { whatsappURL } from "@/lib/whatsApp.js";
 
 export default function ButtonFloating() {
   return (

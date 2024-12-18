@@ -11,7 +11,7 @@ export default function useFloatingButtonVisibility() {
         document.getElementById("footer")?.offsetTop || Infinity;
       const scrollPosition = window.scrollY + window.innerHeight;
       setShowFloatingButton(
-        window.scrollY > 300 && scrollPosition < footerTop - 100
+        window.scrollY > 100 && scrollPosition < footerTop - 50
       );
     };
 

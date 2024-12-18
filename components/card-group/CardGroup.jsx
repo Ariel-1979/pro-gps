@@ -5,11 +5,12 @@ export default function CardGroup() {
   return (
     <section
       id="servicios"
-      className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-700 dark:text-[--dark-principal] bg-servicios"
+      className="min-h-screen flex items-center justify-center 
+              bg-gray-600 text-[--principal] bg-servicios"
     >
-      <div className="container px-4 md:px-6 py-12 md:py-24 lg:py-32">
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-10">
-          Nuestras Características
+      <div className="container px-4 sm:px-6 py-12 ">
+        <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl text-center mb-10">
+          Nuestros Servicios
         </h2>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {CARDS_DATA.map((card) => (
