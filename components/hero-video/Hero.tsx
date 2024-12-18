@@ -18,7 +18,7 @@ export default function Hero() {
           <img
             src="/ProGPS_Logo.png"
             alt="ProGPS"
-            className="mx-auto h-[200] w-[200] md:h-[300] md:w-[300]"
+            className="mx-auto h-[200px] w-[400px] md:h-[300px] md:w-[600px]"
           />
           <h1
             className="text-3xl font-bold tracking-tighter text-[--principal] 
