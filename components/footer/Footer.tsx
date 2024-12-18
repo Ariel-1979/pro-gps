@@ -1,18 +1,16 @@
 import Link from "next/link";
 import Logo from "../ui/Logo";
+import { MailOpen } from "lucide-react";
 
 export default function Footer() {
   const styles_icons =
     "text-sm text-[--principal] hover:text-white transition-colors";
 
   return (
-    <footer id="footer" className="w-full bg-black">
-      <div className="mx-auto flex flex-col gap-4 py-4 px-4 md:px-16 h-16">
-        <div className="flex flex-col gap-4 sm:flex-row items-center justify-between">
+    <footer id="footer" className="w-full bg-black ">
+      <div className="mx-auto flex flex-col gap-4 py-4 px-4 md:px-16 min-h-16">
+        <div className="flex flex-col gap-4 items-center sm:flex-row sm:justify-between">
           <Logo />
-          <p className="text-xs text-white">
-            © {new Date().getFullYear()} ProGPS. Todos los derechos reservados
-          </p>
           <nav className="flex gap-4 sm:gap-6">
             <Link
               className={styles_icons}
@@ -48,23 +46,13 @@ export default function Footer() {
               className={styles_icons}
               href="mailto:comercialprogps@gmail.com"
             >
-              <svg
-                className="h-5 w-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                />
-              </svg>
+              <MailOpen className="h-4 w-4" />
               <span className="sr-only">Email</span>
             </Link>
           </nav>
+          <p className="text-xs text-[--principal] sm:order-none order-last sm:mt-0">
+            © {new Date().getFullYear()} ProGPS. Todos los derechos reservados
+          </p>
         </div>
       </div>
     </footer>

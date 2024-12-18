@@ -55,7 +55,7 @@ export default function LoginComponent() {
   return (
     <main className="bg-black flex-grow flex items-center justify-center bg-login">
       <div className="flex flex-col items-center justify-center max-w-screen-md ">
-        <Card className="min-w-[400px] border-2  border-[--principal] bg-black">
+        <Card className="min-w-[350px] border-2  border-[--principal] bg-black">
           <CardHeader>
             <CardTitle className="text-[--principal] text-center text-2xl">
               Iniciar Sesión
