@@ -10,8 +10,8 @@ export default function Footer() {
       <div className="mx-auto flex flex-col gap-4 py-4 px-4 md:px-16 h-16">
         <div className="flex flex-col gap-4 sm:flex-row items-center justify-between">
           <Logo />
-          <p className="text-xs ">
-            © {new Date().getFullYear()} ProGPS. Todos los derechos
+          <p className="text-xs text-white">
+            © {new Date().getFullYear()} ProGPS. Todos los derechos reservados
           </p>
           <nav className="flex gap-4 sm:gap-6">
             <Link
