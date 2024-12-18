@@ -1,5 +1,4 @@
 "use client";
-
 import useFloatingButtonVisibility from "@/app/hooks/useFloatingButtonVisibility";
 import { useState, useEffect } from "react";
 import ButtonFloating from "./ButtonFloatting";

@@ -21,6 +21,19 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "app/layout.jsx",
+    "components/navbar-menu/NavBar.jsx",
+    "components/card-group/CustomCard.jsx",
+    "components/card-group/CardGroup.jsx",
+    "components/button-floating/ButtonWhatsAppFloating.jsx",
+    "components/button-floating/ButtonFloatting.jsx",
+    "components/card-group/CARD_DATA.js",
+    "lib/whatsApp.js"
+  ],
   "exclude": ["node_modules"]
 }

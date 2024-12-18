@@ -6,7 +6,7 @@ import {
   Bell,
   Database,
 } from "lucide-react";
-export const ICON_STYLE = "h-8 w-8 dark:text-[--dark-secundario]";
+export const ICON_STYLE = "h-10 w-10 text-blue-600";
 
 export const CARDS_DATA = [
   {

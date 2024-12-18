@@ -1,9 +1,5 @@
 :root {
-  --dark-principal: #ffcc00;
-  --dark-secundario: #ffffff;
-
-  --light-principal: #000000;
-  --light-secundario: #ffcc00;
+  --principal: #ffcc00;
 }
 
 .bg-contacto,
@@ -20,4 +16,8 @@
 
 .bg-servicios {
   background-image: url("/servicios.webp");
+}
+
+.bg-login {
+  background-image: url("/background_PROGPS.webp");
 }

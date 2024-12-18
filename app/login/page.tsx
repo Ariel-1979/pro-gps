@@ -13,7 +13,6 @@ import {
 } from "@/components/ui/card";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { X } from "lucide-react";
-import { Separator } from "@/components/ui/separator";
 
 export default function LoginComponent() {
   const [email, setEmail] = useState("");
@@ -54,66 +53,73 @@ export default function LoginComponent() {
   };
 
   return (
-    <Card className="w-full max-w-md mx-auto border-2 border-[#fffd70] dark:border-[#fffd70]">
-      <CardHeader>
-        <CardTitle className="text-[#fffd70] dark:text-[#fffd70] text-center text-2xl">
-          Iniciar Sesión
-        </CardTitle>
-        <CardDescription className="text-center text-white">
-          Ingrese sus credenciales para acceder a su cuenta.
-        </CardDescription>
-      </CardHeader>
-      <Separator className="mb-6 text-white" />
-      <CardContent>
-        <form onSubmit={handleSubmit}>
-          <div className="grid w-full items-center gap-4">
-            <div className="flex flex-col space-y-1.5">
-              <Label htmlFor="email">Correo electrónico</Label>
-              <Input
-                id="email"
-                type="email"
-                placeholder="nombre@ejemplo.com"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
-            </div>
-            <div className="flex flex-col space-y-1.5">
-              <Label htmlFor="password">Contraseña</Label>
-              <Input
-                id="password"
-                type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
-              />
-            </div>
-          </div>
-          {error && (
-            <Alert variant="destructive" className="mt-4">
-              <AlertDescription className="flex items-center">
-                <X className="h-4 w-4 mr-2" />
-                {error}
-              </AlertDescription>
-            </Alert>
-          )}
-        </form>
-      </CardContent>
-      <CardFooter className="flex justify-between">
-        <Button
-          variant="outline"
-          className="border-[#fffd70] text-[#fffd70] hover:bg-[#fffd70] hover:text-black"
-        >
-          Cancelar
-        </Button>
-        <Button
-          onClick={handleSubmit}
-          disabled={isLoading}
-          className="bg-[#fffd70] hover:bg-[#e6e460] text-black"
-        >
-          {isLoading ? "Iniciando sesión..." : "Iniciar Sesión"}
-        </Button>
-      </CardFooter>
-    </Card>
+    <main className="bg-black flex-grow flex items-center justify-center bg-login">
+      <div className="flex flex-col items-center justify-center max-w-screen-md ">
+        <Card className="min-w-[400px] border-2  border-[--principal] bg-black">
+          <CardHeader>
+            <CardTitle className="text-[--principal] text-center text-2xl">
+              Iniciar Sesión
+            </CardTitle>
+            <CardDescription className="text-center text-white">
+              Ingrese su usuario y contraseña
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <form onSubmit={handleSubmit}>
+              <div className="grid w-full items-center gap-4">
+                <div className="flex flex-col space-y-1.5">
+                  <Label htmlFor="email" className="text-[--principal]">
+                    Usuario
+                  </Label>
+                  <Input
+                    id="email"
+                    type="email"
+                    placeholder="nombre@ejemplo.com"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                  />
+                </div>
+                <div className="flex flex-col space-y-1.5">
+                  <Label htmlFor="password" className="text-[--principal]">
+                    Contraseña
+                  </Label>
+                  <Input
+                    id="password"
+                    type="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    required
+                  />
+                </div>
+              </div>
+              {error && (
+                <Alert variant="destructive" className="mt-4">
+                  <AlertDescription className="flex items-center">
+                    <X className="h-4 w-4 mr-2" />
+                    {error}
+                  </AlertDescription>
+                </Alert>
+              )}
+            </form>
+          </CardContent>
+          <CardFooter className="flex justify-between">
+            <Button
+              variant="outline"
+              className="bg-[#fffd70] hover:bg-[#e6e460] text-black"
+            >
+              Cancelar
+            </Button>
+            <Button
+              onClick={handleSubmit}
+              disabled={isLoading}
+              className="bg-[#fffd70] hover:bg-[#e6e460] text-black"
+            >
+              {isLoading ? "Iniciando sesión..." : "Iniciar Sesión"}
+            </Button>
+          </CardFooter>
+        </Card>
+      </div>
+    </main>
   );
 }
