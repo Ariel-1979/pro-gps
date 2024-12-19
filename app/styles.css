@@ -3,7 +3,8 @@
 }
 
 .bg-contacto,
-.bg-servicios {
+.bg-servicios,
+.bg-login {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

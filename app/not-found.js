@@ -4,7 +4,7 @@ export default function NotFound() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden ">
       <img
-        src="/background_PROGPS.jpg"
+        src="/background_PROGPS.webp"
         alt="background"
         className="absolute w-full h-full object-cover"
       />

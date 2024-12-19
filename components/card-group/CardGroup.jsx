@@ -12,7 +12,7 @@ export default function CardGroup() {
         <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl text-center mb-10">
           Nuestros Servicios
         </h2>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="container grid gap-6 grid-cols-1 md:grid-cols-3 md:px-12">
           {CARDS_DATA.map((card) => (
             <CustomCard card={card} key={card.key} />
           ))}
