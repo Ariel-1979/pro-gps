@@ -24,7 +24,7 @@ export default function Hero() {
             className="text-3xl font-bold tracking-tighter text-[--principal] 
             sm:text-4xl md:text-5xl lg:text-6xl/none text-center shadow-text"
           >
-            Logística y Recupero Vehicular
+            Logística y Localización Vehicular
           </h1>
           <p className="mx-auto max-w-[700px] text-white text-bold md:text-xl">
             Soluciones profesionales de rastreo satelital para tu flota
