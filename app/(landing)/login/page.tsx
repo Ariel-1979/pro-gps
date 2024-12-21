@@ -74,7 +74,7 @@ export default function LoginComponent() {
                   <Input
                     id="email"
                     type="email"
-                    placeholder="nombre@ejemplo.com"
+                    placeholder="Ingrese su usuario"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
@@ -87,6 +87,7 @@ export default function LoginComponent() {
                   <Input
                     id="password"
                     type="password"
+                    placeholder="Ingrese su contraseña"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     required
