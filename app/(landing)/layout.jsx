@@ -1,5 +1,6 @@
 import "../../app/globals.css";
 import "../../app/styles.css";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { Footer, NavBar } from "@/components/index";
 
 export const metadata = {
@@ -14,6 +15,7 @@ export default function LandingLayout({ children }) {
         <NavBar />
         {children}
         <Footer />
+        <GoogleAnalytics gaId="G-NF1HV68E6B" />
       </body>
     </html>
   );
