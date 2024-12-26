@@ -45,22 +45,22 @@ export default function LinksPage() {
             {
               href: process.env.NEXT_PUBLIC_PHONE_NUMBER,
               icon: <MessageCircle className="w-5 h-5" />,
-              label: "WhatsApp Comercial",
+              label: "WhatsApp - Comercial",
             },
             {
               href: process.env.NEXT_PUBLIC_EMAIL_COMERCIAL,
               icon: <Mail className="w-5 h-5" />,
-              label: "Email Comercial",
+              label: "Email - Comercial",
             },
             {
               href: process.env.NEXT_PUBLIC_PHONE_SOS,
               icon: <MessageCircle className="w-5 h-5" />,
-              label: "WhatsApp Asistencia Técnica",
+              label: "WhatsApp - Asistencia Técnica",
             },
             {
               href: process.env.NEXT_PUBLIC_EMAIL_SOS,
               icon: <Mail className="w-5 h-5" />,
-              label: "Email Asistencia Técnica",
+              label: "Email - Asistencia Técnica",
             },
           ].map((link, index) => (
             <Card

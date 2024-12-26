@@ -4,6 +4,23 @@ import "./styles.css";
 export const metadata = {
   title: "Rastreo Satelital",
   description: "Rastreo Satelital",
+  openGraph: {
+    title: "Rastreo Satelital",
+    description: "Seguimiento GPS en tiempo real para su flota",
+    url: "https://progps.com.ar",
+    siteName: "Rastreo Satelital",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Rastreo Satelital ProGPS",
+        type: "image/png",
+      },
+    ],
+    locale: "es_AR",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {

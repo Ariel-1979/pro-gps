@@ -1,11 +1,11 @@
 import Link from "next/link";
 import { Button } from "../ui/button";
-import { whatsappURL } from "@/lib/whatsApp";
+import { whatsappSOS } from "@/lib/whatsApp";
 
 export const ButtonWhatsApp = () => {
   return (
-    <Link href={whatsappURL} target="_blank" rel="noopener noreferrer">
-      <Button className="w-full bg-green-500 hover:bg-green-600 rounded-xl">
+    <Link href={whatsappSOS} target="_blank" rel="noopener noreferrer">
+      <Button className="w-full bg-green-500 hover:bg-red-600 rounded-xl">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"

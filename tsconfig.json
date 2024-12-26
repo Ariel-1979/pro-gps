@@ -34,7 +34,8 @@
     "components/button-floating/ButtonFloatting.jsx",
     "components/card-group/CARD_DATA.js",
     "lib/whatsApp.js",
-    "components/footer/Footer.jsx"
+    "components/footer/Footer.jsx",
+    "components/siniestro/Siniestro.jsx"
   ],
   "exclude": ["node_modules"]
 }

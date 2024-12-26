@@ -4,7 +4,8 @@
 
 .bg-contacto,
 .bg-servicios,
-.bg-login {
+.bg-login,
+.bg-siniestro {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -17,6 +18,10 @@
 
 .bg-servicios {
   background-image: url("/servicios.webp");
+}
+
+.bg-siniestro {
+  background-image: url("/siniestros.webp");
 }
 
 .bg-login {

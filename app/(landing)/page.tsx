@@ -3,6 +3,7 @@ import {
   CardGroup,
   Contact,
   Hero,
+  Siniestro,
 } from "@/components/index";
 
 export default async function LandingPage() {
@@ -11,6 +12,7 @@ export default async function LandingPage() {
       <Hero />
       <CardGroup />
       <Contact />
+      <Siniestro />
       <ButtonWhatsappFloating />
     </div>
   );
