@@ -2,8 +2,10 @@ import "./globals.css";
 import "./styles.css";
 
 export const metadata = {
+  metadataBase: new URL("https://progps.com.ar"),
   title: "Rastreo Satelital",
   description: "Rastreo Satelital",
+  keywords: "rastreo, satelital, gps, seguimiento, camiones, flota",
   openGraph: {
     title: "Rastreo Satelital",
     description: "Seguimiento GPS en tiempo real para su flota",
