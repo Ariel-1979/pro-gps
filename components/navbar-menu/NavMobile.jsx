@@ -27,7 +27,7 @@ export const NavMobile = ({ setMobileMenuOpen }) => {
 
         <Link
           className={styles_link}
-          href="/login"
+          href="https://rastreo.progps.com.ar"
           onClick={() => setMobileMenuOpen(false)}
         >
           Iniciar Sesión
